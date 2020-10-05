@@ -32,6 +32,8 @@ debug: ##@docker Open debug mode log
 	@docker attach api_user_web_1
 bash: ##@docker Open bash project
 	@docker-compose exec web bash
+bundle: ##@docker Bundle install
+	@docker-compose exec web bundle install
 console: ##@docker Open bash project
 	@docker-compose exec web bundle exec rails c
 reset_db: ##@docker Reset database project to default
